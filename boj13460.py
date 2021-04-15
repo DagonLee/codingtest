@@ -1,6 +1,8 @@
 dx = [0,0,1,-1]
 dy = [1,-1,0,0]
 LIMIT = 10
+
+
 class Result:
     def __init__(self, moved, hole, x, y):
         self.moved = moved
