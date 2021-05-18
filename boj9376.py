@@ -32,7 +32,7 @@ while t:
 	w += 2
 	m = ['.' * w] + m + ['.' * w]
 	c = []
-	ans = 200
+	ans = 10000
 	d0 = bfs(m, 0, 0)
 	for i in range(h):
 		for j in range(w):
