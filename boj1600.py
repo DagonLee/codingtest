@@ -10,6 +10,8 @@ dy = [0, -1, 1, 0]
 q = deque()
 q.append((0, 0, 0))
 d[0][0][0] = 0
+
+
 while q:
 	x, y, c = q.popleft()
 	if c < k:
@@ -29,11 +31,12 @@ while q:
 			d[nx][ny][c] = d[x][y][c] + 1
 			q.append((nx, ny, c))
 
+
 ans = -1
-for i in range(k + 1):
-	if d[h - 1][w - 1][i] != -1:
+for i in d[h - 1][w - 1]:
+	if i != -1:
 		if ans == -1:
-			ans = d[h - 1][w - 1][i]
+			ans = i
 		else:
-			ans = min(ans, d[h - 1][w - 1][i])
+			ans = min(ans, i)
 print(ans)
