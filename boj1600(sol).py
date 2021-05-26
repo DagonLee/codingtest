@@ -13,7 +13,7 @@ q = deque()
 q.append((0,0,0))
 d[0][0][0] = 0
 while q:
-    x,y,c = q.popleft()
+    x, y, c = q.popleft()
     for k in range(12):
         nx = x+dx[k]
         ny = y+dy[k]
@@ -24,7 +24,7 @@ while q:
             if nc <= l:
                 if d[nx][ny][nc] == -1:
                     d[nx][ny][nc] = d[x][y][c] + 1
-                    q.append((nx,ny,nc))
+                    q.append((nx, ny, nc))
 ans = -1
 for i in range(l+1):
     if d[n-1][m-1][i] == -1:
