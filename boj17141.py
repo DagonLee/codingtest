@@ -38,13 +38,11 @@ def bfs(com):
 				cnt = d[i][j]
 	return cnt
 
-ans = 2500
+
+ans = -1
 for c in comb_lst:
 	tmp = bfs(c)
-	if tmp != -1 and tmp < ans:
+	if ans == -1 or tmp < ans and tmp != -1:
 		ans = tmp
 
-if ans == 2500:
-	print(-1)
-	exit()
 print(ans)
