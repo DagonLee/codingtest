@@ -1,7 +1,7 @@
 import sys
 sys.setrecursionlimit(100000)
 n = int(sys.stdin.readline())
-lst = list(map(int,sys.stdin.readline().split()))
+lst = list(map(int, sys.stdin.readline().split()))
 d = [[-1] * n for _ in range(n)]
 
 
