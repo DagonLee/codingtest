@@ -1,5 +1,3 @@
-
-
 def zigzag(x, y, size):
 	if x == r and y == c:
 		global ans
